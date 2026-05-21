@@ -4,8 +4,8 @@ const baseApiUrl = async () => {
 };
 
 module.exports.config = {
-    name: "bby",
-    aliases: ["baby", "bbe", "babe"],
+    name: "kayn",
+    aliases: ["kayn", "kaynn", "kyn"],
     version: "6.9.0",
     author: "dipto",
     countDown: 0,
@@ -62,7 +62,7 @@ module.exports.onStart = async ({
                 }));
                 teachers.sort((a, b) => b.value - a.value);
                 const output = teachers.map((t, i) => `${i + 1}/ ${t.name}: ${t.value}`).join('\n');
-                return api.sendMessage(`Total Teach = ${data.length}\n👑 | List of Teachers of baby\n${output}`, event.threadID, event.messageID);
+                return api.sendMessage(`Total Teach = ${data.length}\n👑 | List of Teachers of kayn\n${output}`, event.threadID, event.messageID);
             } else {
                 const d = (await axios.get(`${link}?list=all`)).data;
                 return api.sendMessage(`❇️ | Total Teach = ${d.length || "api off"}\n♻️ | Total Response = ${d.responseLength || "api off"}`, event.threadID, event.messageID);
@@ -164,9 +164,9 @@ module.exports.onChat = async ({
 }) => {
     try {
         const body = event.body ? event.body?.toLowerCase() : ""
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("rocky") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {
+        if (body.startsWith("kayn") || body.startsWith("kyn") || body.startsWith("hoy") || body.startsWith("gago") || body.startsWith("baby") || body.startsWith("kaynnn")) {
             const arr = body.replace(/^\S+\s*/, "")
-            const randomReplies = ["ডাকো কেন 🥺 প্রেম করবা নাকি 😞", "বলো না ভালোবাসি🥹..!!", "ওই জান কাছে আসো 🫦😩", "আলাবু বলো সোনা 🤧", "রকি রে দেখছো? 🥺 তাকে কোথাও খুজে পাচ্ছি না 😩", "চুম্মা দাও ৫ টাকা দিবো🥺🤌", "হ্যাঁ গো জান বলো 🙂", "ডাকিস না, তুই পচা 😼", "তুমি কি আমাকে পসন্দ করো 🙂", "ডুম ডুম টেডাও 😬"];
+            const randomReplies = ["araymobos", "pstingin pipi mo", "potanginamo boys", "aray yarnn", "kuskusin mo naman bayag mo", "ah basta", "anopota", "ah ganon", "tanga", "osige"];
             if (!arr) {
 
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
