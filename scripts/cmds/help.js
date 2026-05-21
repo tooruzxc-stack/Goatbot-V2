@@ -74,7 +74,7 @@ module.exports = {
 						const requiredRole = cmd.config.role !== undefined ? cmd.config.role : 0; 
 
 			return message.reply(
-				`☠️ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗜𝗡𝗙𝗢 ☠️\n\n` +
+				` 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗜𝗡𝗙𝗢 \n\n` +
 				`➥ Name: ${name}\n` +
 				`➥ Category: ${category || "Uncategorized"}\n` +
 				`➥ Description: ${desc}\n` +
@@ -89,7 +89,7 @@ module.exports = {
 		const formatCommands = (cmds) =>
 			cmds.sort().map((cmd) => `× ${cmd}`);
 
-		let msg = `━━━☠️ 𝗡𝗲𝗼𝗞𝗘𝗫 𝗔𝗜 ☠️━━━\n`;
+		let msg = `━━━ GOATBOT-V2 ━━━\n`;
 		const sortedCategories = Object.keys(categories).sort();
 		for (const cat of sortedCategories) {
 			const emoji = emojiMap[cat] || "➥";
